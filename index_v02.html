@@ -10,22 +10,42 @@
     <!--  ADD FAVICON-->
 </head>
 
-<body>
-    <main>
-      <!-- Header: Logo and Menu Icon (with CSS section>)-->
-      <header>
-        <a href="index.html"><img id="logo" src="img/Buissereth_logo_v02.svg" alt="b."></a>
 
-        <a id="icon" href="#nav">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-      </header>
+<body>
+  <div id="fade-out">
+    <div class="splash_content">
+      <img id="anim_logo" src="img/Buissereth_logo_v02.svg" alt="b.">
+    </div>
+  </div>
+  <!-- Header: Logo and Menu Icon (with CSS section>)-->
+  <header>
+    <a href="index_v02.html"><img id="logo" src="img/Buissereth_logo_v02.svg" alt="b."></a>
+    
+    <!-- href="#nav" -->
+  
+    <a id="icon"  onclick="openNav()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <!-- <span onclick="openNav()">&#9776;</span> -->
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index_v02.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  
+</header>
+    <main>
 
       <!-- Portrait: Introduction-->
       <figure >
-        --><img id="portrait" src="img/portrait_v02.svg" alt="brianna_buissereth">
+        <img id="portrait" src="img/portrait_v02.svg" alt="brianna_buissereth">
       </figure>
       <!--Refer to Index Specs for styling-->
       <div class="about_caption">
@@ -43,14 +63,17 @@
           <p class="paragraph_text"> I was accepted into Westphal College of Media Arts at Drexel University in 2016 for the Interactive Digital Media major. The work and skills I have had to learn were daunting especially because I have not had any prior education with computer languages. I chose Interactive Digital Media because of the wide skill set needed for the job environment in digital media. My ideal career is not to be in one position doing one job every day. I would like to explore many roles in many fields. Digital media stretches across many fields that will allow me to keep learning and make the best product for that client. I fit into the role of project manager or creative director for projects. </p>
 
       <!-- Navigation: with CSS section-->
-      <nav id="nav">
+      <!--<nav id="nav">
 
         <ul>
           <li><a id="index_button" href="index.html">Home</a></li>
           <li><a id="resume_button" href="resume.html">Resume</a></li>
           <li><a id="gallery_button" href="gallery.html">Gallery</a></li>
         </ul>
-      </nav>
+      </nav>-->
+
+
+
 
     <!-- Footer: with CSS section-->
     <footer>
@@ -58,5 +81,7 @@
     </footer>
 
     </main>
+
+    <script src="master.js"></script>
   </body>
 </html>
