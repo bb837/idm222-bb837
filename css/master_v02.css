@@ -15,7 +15,47 @@ purple= #C06C84
 dark purple= #6C5B7B
 dark blue= #355C7D */
 
+:root {
+    --pastel_pink: #F8B195;
+    --pink: #F67280;
+    --purple: #C06C84;
+    --dark_purple: #6C5B7B;
+    --dark_blue: #355C7D;
+}
+
 header {
+    background-color: var(--dark_blue);
+    box-shadow: 0 .3125rem .625rem #717171;
+    color: #ffffff;
+    position: sticky;
+    text-align: left;
+    top: 0;
+    width: 100%;
+    z-index: 30;
     
 }
 
+a#icon {
+    border-radius: .125rem;
+    display: block;
+    position: absolute;
+    top: 1.75rem;
+    right: 1.2rem;
+}
+
+#nav a {
+    background-color: #fff2f4;
+    border: 2px solid var(--pink);
+    border-radius: .25rem;
+    font: 1rem/1.2rem arial, sans-serif;
+    font-size: 1.2rem;
+    margin: .125rem 2.5rem;
+    padding: 1rem 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#nav ul {
+    list-style: none;
+}
