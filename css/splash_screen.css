@@ -9,15 +9,15 @@
   width: 100vw;
   position: absolute;
   z-index: 50;
-	-webkit-animation: fade-out 9s ease-out both;
-	 animation: fade-out 9s ease-out both;
+	-webkit-animation: fade-out 12s ease-out both;
+	 animation: fade-out 12s ease-out both;
 }
 
  @-webkit-keyframes fade-out {
   0% {
     opacity: 1;
   }
-  75% {
+  95% {
     opacity: 1;
   }
   100% {
@@ -29,7 +29,7 @@
   0% {
     opacity: 1;
   }
-  75% {
+  95% {
     opacity: 1;
   }
   100% {
@@ -50,7 +50,7 @@
 }
 
 #anim_logo {
-  margin-left: 40rem;
+  margin-left: 55rem;
   -webkit-animation: jello-horizontal 0.9s both;
   animation: jello-n-roll 2s both;
 }
@@ -139,7 +139,6 @@
 
 /* @-webkit-keyframes roll-out-left {
     0% {
-
     }
     100% {
       -webkit-transform: translateX(-1000px) rotate(-540deg);
@@ -160,28 +159,28 @@
     }
   } */
 
-  .splash-text {
+.splash-text {
     color: white;
     font: bold 5rem 'bebas-neue-by-fontfabric', sans-serif;
     margin: 1rem 1rem;
     text-align: center;
-    top: 22rem;
-    left: 37rem;
+    top: 24rem;
+    left: 51rem;
     position: absolute;
     opacity: 0;
 
     animation: flip-text 1.5s backwards;
   }
 
-  #text-1 {
+#text-1 {
       animation-delay: 2s;
   }
 
-  #text-2 {
+#text-2 {
       animation-delay: 4s;
   }
 
-  #text-3 {
+#text-3 {
     animation-delay: 6s;
 }
   
@@ -192,16 +191,23 @@
 
 @-webkit-keyframes flip-text {
     0% {
-      -webkit-transform: translateY(0) translateZ(0) rotateX(-180);
-              transform: translateY(0) translateZ(0) rotateX(-180);
+      -webkit-transform: translateY(0) translateZ(0) rotateX(-90);
+              transform: translateY(0) translateZ(0) rotateX(-90);
       -webkit-transform-origin: 50% 100%;
               transform-origin: 50% 100%;
         opacity: 0;
     }
-    25% {
+    /* 10% {
+      -webkit-transform: translateY(0) translateZ(0) rotateX(-90);
+             transform: translateY(0) translateZ(0) rotateX(-90);
+      -webkit-transform-origin: 12.5% 25%;
+             transform-origin: 12.5% 25%;
+    } */
+    50% {
+      
         opacity: 1;
     }
-    95% {
+    75% {
         opacity: 1;
     }
     100% {
@@ -209,9 +215,49 @@
               transform: translateY(100%) translateZ(160px) rotateX(0deg);
       -webkit-transform-origin: 50% 0%;
               transform-origin: 50% 0%;
+      opacity: 0;
     }
   }
   @keyframes flip-text {
+    0% {
+      -webkit-transform: translateY(0) translateZ(0) rotateX(-90deg);
+              transform: translateY(0) translateZ(0) rotateX(-90deg);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(100%) translateZ(160px) rotateX(0deg);
+              transform: translateY(100%) translateZ(160px) rotateX(0deg);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 0;
+    }
+  }
+
+
+
+
+  #text-4 {
+    color: white;
+    font: bold 5rem 'bebas-neue-by-fontfabric', sans-serif;
+    margin: 1rem 1rem;
+    text-align: center;
+    top: 24rem;
+    left: 51rem;
+    position: absolute;
+    opacity: 0;
+
+    animation: flip-text-stay 1.5s forwards 8s;
+  }
+
+  @-webkit-keyframes flip-text-stay {
     0% {
       -webkit-transform: translateY(0) translateZ(0) rotateX(-180deg);
               transform: translateY(0) translateZ(0) rotateX(-180deg);
@@ -219,10 +265,7 @@
               transform-origin: 50% 100%;
       opacity: 0;
     }
-    25% {
-        opacity: 1;
-    }
-    95% {
+    50% {
         opacity: 1;
     }
     100% {
@@ -230,6 +273,27 @@
               transform: translateY(100%) translateZ(160px) rotateX(0deg);
       -webkit-transform-origin: 50% 0%;
               transform-origin: 50% 0%;
+      opacity: 1;
     }
   }
-  
+
+
+  @keyframes flip-text-stay {
+    0% {
+      -webkit-transform: translateY(0) translateZ(0) rotateX(-180deg);
+              transform: translateY(0) translateZ(0) rotateX(-180deg);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(100%) translateZ(160px) rotateX(0deg);
+              transform: translateY(100%) translateZ(160px) rotateX(0deg);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+     opacity: 1;
+    }
+  }
