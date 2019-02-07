@@ -1,5 +1,13 @@
 /*      Splash Screen          */
 
+#splash-closebtn {
+  color: white;
+  font: bold 5rem 'bebas-neue-by-fontfabric', sans-serif;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  position: absolute;
+}
+
 #fade-out {
   background-color: #F67280;
   display: flex;
@@ -164,8 +172,8 @@
     font: bold 5rem 'bebas-neue-by-fontfabric', sans-serif;
     margin: 1rem 1rem;
     text-align: center;
-    top: 24rem;
-    left: 51rem;
+    top: 22rem;
+    left: 52rem;
     position: absolute;
     opacity: 0;
 
