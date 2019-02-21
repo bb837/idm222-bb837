@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://use.typekit.net/cai3xkh.css">
     <link rel="stylesheet" href="css/master_v02.css">
-    <link rel="stylesheet" href="css/splash_screen.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/splash-mobile.css">
     <!--  ADD FAVICON-->
 </head>
 
 
 <body>
 
-
   <div id="fade-out">
+    <a href="javascript:void(0)" id="splash-closebtn">&times;</a>
     <div class="splash_content">
-      <a href="javascript:void(0)" id="splash-closebtn" onclick="closeSplash()">&times;</a>
       <img id="anim_logo" class="jello, roll"
       src="img/B_logo_invert.svg" alt="b.">
       <p id="text-1" class='splash-text'>Web Designer</p>
@@ -27,17 +27,14 @@
       <p id="text-4" >Welcome!</p>
     </div>
   </div>
+
   <!-- Header: Logo and Menu Icon (with CSS section>)-->
- 
- 
- 
- 
   <header>
     <a href="index_v02.html"><img id="logo" src="img/Buissereth_logo_v02.svg" alt="b."></a>
     
     <!-- href="#nav" -->
   
-    <a id="icon"  onclick="openNav()">
+    <a id="icon">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
@@ -45,18 +42,18 @@
     <!-- <span onclick="openNav()">&#9776;</span> -->
 
     <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
       <div class="overlay-content">
         <a href="index_v02.html">About</a>
         <a href="resume.html">Resume</a>
         <a href="gallery.html">Gallery</a>
       </div>
     </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <!-- <span id= "icon" style="font-size:30px;cursor:pointer">&#9776; open</span> -->
   
 </header>
-    <main>
 
+    <main>
       <!-- Portrait: Introduction-->
       <figure >
         <img id="portrait" src="img/portrait_v02.svg" alt="brianna_buissereth">
