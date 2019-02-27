@@ -5,9 +5,9 @@ html {
     scroll-behavior: smooth;
   }
   
-  a:visited, a:link {
+  /* a:visited, a:link {
     color: #F8B195;
-  }
+  } */
 
   * {
     box-sizing: border-box;

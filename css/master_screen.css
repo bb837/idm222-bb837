@@ -1,20 +1,28 @@
+/*            DOCUMENT/HTML           */
+
 html {
     font-size: 100%;
     scroll-behavior: smooth;
     overflow-x: hidden;
-}
+    }
+  
+  /* a:visited, a:link {
+    color: #F8B195;
+  } */
 
-* {
-  box-sizing: border-box;
-}
+  * {
+    box-sizing: border-box;
+    }
 
 /* Website Color*/
-/*
-pastel pink= #F8B195
-light pink= #F67280
-purple= #C06C84
-dark purple= #6C5B7B
-dark blue= #355C7D */
+    /*
+    pastel pink= #F8B195
+    light pink= #F67280
+    purple= #C06C84
+    dark purple= #6C5B7B
+    dark blue= #355C7D */
+
+
 
 /*              HEADER               */
 
@@ -72,12 +80,7 @@ a#icon {
     right: 1.2rem;
 }
 
-#portrait {
-  display: block;
-  position: relative;
-  margin: .5rem auto;
-  width: 220px;
-}
+/*          NAVIGATION         */
 
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */    
@@ -145,8 +148,15 @@ a#icon {
     }
   } */
 
-  /*    TEXT    */
-  h1 {
+  #myNav {
+    color: #C06C84;
+    font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+ /*    TEXT    */
+ h1 {
     color: #6C5B7B;
     font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
     margin: 1rem auto;
@@ -212,10 +222,10 @@ a#icon {
     width: 1rem;
     margin-left: -1rem;
   }
+  
+/*     main     */
 
-  /*     main     */
-
-  main {
+main {
     background: #f4efde; /* Old browsers */
     background: -moz-linear-gradient(top, #f4efde 0%, #f7d3c5 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #f4efde 0%,#f7d3c5 100%); /* Chrome10-25,Safari5.1-6 */
@@ -228,9 +238,18 @@ a#icon {
     font-style: normal;
   }
 
-  #myNav {
-    color: #C06C84;
-    font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
-    margin: 1rem auto;
-    text-align: center;
-}
+  #portrait {
+    display: block;
+    position: relative;
+    margin: .5rem auto;
+    width: 220px;
+  }
+  
+  
+  
+
+
+
+
+/* @media only screen and (max-width: 375px) {
+} */
