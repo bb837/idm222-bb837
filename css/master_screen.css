@@ -221,6 +221,7 @@ header {
 
 main {
     background-image: linear-gradient(to bottom, #ffffff, #f6ecfb, #f7d7ee, #fcc1d6, #ffacb5);
+    min-height: 100vh;
   }
   
 

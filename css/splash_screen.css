@@ -1,7 +1,7 @@
 /*      Splash Screen          */
 
 /*     MOBILE             */
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
   #splash-closebtn {
       color: white;
       font: bold 5rem 'bebas-neue-by-fontfabric', sans-serif;
@@ -54,7 +54,7 @@
     #anim_logo {
         position: relative;
         top: 8rem;
-        left: 5.5rem;
+        left: 4.2rem;
       height: 200px;
       width: 200px;
       -webkit-animation: jello-horizontal 0.9s forwards;
@@ -140,19 +140,19 @@
       display: block;
       width: 14rem;
   
-      animation: flip-text 1.5s backwards;
+      animation: flip-text .75s backwards;
     }
   
   #text-1 {
-        animation-delay: 2s;
+        animation-delay: 1s;
     }
   
   #text-2 {
-        animation-delay: 4s;
+        animation-delay: 2s;
     }
   
   #text-3 {
-      animation-delay: 6s;
+      animation-delay: 3s;
   }
     
     .flip-text {
@@ -226,7 +226,7 @@
 
       display: block;
       width: 14rem;
-      animation: flip-text-stay 1.5s forwards 8s;
+      animation: flip-text-stay .75s forwards 4s;
     }
   
     @-webkit-keyframes flip-text-stay {
@@ -446,19 +446,19 @@
         position: absolute;
         opacity: 0;
     
-        animation: flip-text 1.5s backwards;
+        animation: flip-text .75s backwards;
       }
     
     #text-1 {
-          animation-delay: 2s;
+          animation-delay: 1s;
       }
     
     #text-2 {
-          animation-delay: 4s;
+          animation-delay: 2s;
       }
     
     #text-3 {
-        animation-delay: 6s;
+        animation-delay: 3s;
     }
       
       .flip-text {
@@ -528,7 +528,7 @@
         position: absolute;
         opacity: 0;
     
-        animation: flip-text-stay 1.5s forwards 8s;
+        animation: flip-text-stay .75s forwards 4s;
       }
     
       @-webkit-keyframes flip-text-stay {
