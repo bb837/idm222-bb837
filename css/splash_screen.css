@@ -1,6 +1,7 @@
 /*      Splash Screen          */
 
-@media only screen and (min-width: 320px) and (max-width : 480px) {
+/*     MOBILE             */
+@media only screen and (max-width: 375px) {
   #splash-closebtn {
       color: white;
       font: bold 5rem 'bebas-neue-by-fontfabric', sans-serif;
@@ -19,8 +20,8 @@
       width: 100vw;
       position: absolute;
       z-index: 50;
-        -webkit-animation: fade-out 12s ease-out both;
-       animation: fade-out 12s ease-out both;
+        -webkit-animation: fade-out 6s ease-out both;
+       animation: fade-out 6s ease-out both;
       visibility: visible;
     }
     
@@ -312,8 +313,8 @@
       width: 100vw;
       position: absolute;
       z-index: 50;
-      -webkit-animation: fade-out 12s ease-out both;
-       animation: fade-out 12s ease-out both;
+      -webkit-animation: fade-out 6s ease-out both;
+       animation: fade-out 6s ease-out both;
     }
     
      @-webkit-keyframes fade-out {

@@ -26,29 +26,31 @@ html {
 
 /*              HEADER               */
 
-/* header {
-    background-color: #355C7D;
-    box-shadow: 0 .3125rem .625rem #717171;
-    color: #ffffff;
-    position: sticky;
+header {
+    /* background-color: #355C7D;
+    box-shadow: 0 .3125rem .625rem #717171; */
+    /* color: #ffffff; */
+    /* position: sticky;
     text-align: left;
     top: 0;
     width: 100%;
     z-index: 30;
-    height: 70px;
+    height: 70px; */
+    padding-top: .5rem;
+    margin-bottom: 2.75rem;
   }
-   */
+  
   #logo {
-    position: absolute;
-    top: .5rem;
-    height: 115px;
-    margin: .1rem 1.3rem;
-    padding: .5rem .5rem;
-    width: 115px;
+    margin: .1rem .5rem;
+    padding: .25rem .25rem;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: .75rem;
   }
 
   span.bar {
-    background-color: #fff;
+    background-color: #355C7D;
     border-radius: .125rem;
     clear: both;
     display: block;
@@ -61,26 +63,14 @@ html {
       border-radius: .125rem;
       display: block;
       position: absolute;
-      top: 1.6rem;
-      right: 1.2rem;
+      top: 2.75rem;
+      right: 1.5rem;
   }
 
-#logo {
-  height: 70px;
-  margin: .1rem 1.125rem;
-  padding: .5rem .25rem;
-  width: 70px;
-}
-
-a#icon {
-    border-radius: .125rem;
-    display: block;
-    position: absolute;
-    top: 1.75rem;
-    right: 1.2rem;
-}
-
 /*          NAVIGATION         */
+
+/* PUT HOVERS AND VISITED AND LINK */
+
 
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */    
@@ -157,27 +147,28 @@ a#icon {
 
  /*    TEXT    */
  h1 {
-    color: #6C5B7B;
-    font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
-    margin: 1rem auto;
-    text-align: center;
+   color: #F67280;
+   font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
+   margin: 1rem auto;
+   text-align: center;
   }
   
   h2 {
-    color: #C06C84;
+    color: #355C7D;
     font: 2rem 'bebas-neue-by-fontfabric', sans-serif;
     font-weight: 600;
     margin: .5rem 1.2rem;
   }
   
   h3 {
-    color: #F67280;
+    color: #6C5B7B;
     font: 2rem 'bebas-neue-by-fontfabric', sans-serif;
     font-weight: 400;
     margin: .5rem 1.875rem;
   }
   
   h4 {
+    color: #C06C84;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
     margin: .5rem 3.4rem;
@@ -266,6 +257,19 @@ footer {
     margin-bottom: 3rem;
     text-align: center;
   }
+  /* @media only screen and (max-width: 720px) {
+
+    main {
+      padding-left: 2rem;
+    }
+  } */
+
+  /* @media only screen and (min-width: 1024px) {
+
+    main {
+      padding-left: 3rem;
+    }
+  } */
 
   /*         RESUME SPECS          */
 
@@ -304,6 +308,20 @@ footer {
   .resume_centered {
     text-align: center;
   }
+
+  /* @media only screen and (min-width: 720px) {
+
+    #resume_info {
+      padding-left: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+    #resume_info {
+      padding-left: 3rem;
+    }
+  } */
 
 /*         GALLERY/IMAGES SPECS         */
 

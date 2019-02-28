@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>gallery</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://use.typekit.net/cai3xkh.css">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/master_screen.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -29,13 +29,23 @@
   <main>
     <header>
       <!-- Header: Logo and Menu Icon (with CSS section>)-->
-        <a href="index.html"><img id="logo" src="img/Buissereth_logo_v02.svg" alt="b."></a>
+        <a href="index_v02.html"><img id="logo" src="img/Buissereth_logo_v02.svg" alt="b."></a>
 
-      <a id="icon" href="#nav">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
+        <a id="icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <!-- <span onclick="openNav()">&#9776;</span> -->
+      
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
+            <div class="overlay-content">
+              <a href="index_v02.html">About</a>
+              <a href="resume.html">Resume</a>
+              <a href="gallery.html">Gallery</a>
+            </div>
+          </div>
     </header>
 
     <!-- Body Text-->
@@ -172,19 +182,11 @@
             <p class="gallery_centered">Collaborative animation with <a href="http://erikmartus.com/">Erik Martus</a>
                Created in Adobe After Effects</p>
 
-    <!-- Navigation: with CSS section-->
-    <nav id="nav">
-      <ul>
-        <li><a id="index_button" href="index.html">Home</a></li>
-        <li><a id="resume_button" href="resume.html">Resume</a></li>
-        <li><a id="gallery_button" href="gallery.html">Gallery</a></li>
-      </ul>
-    </nav>
 
     <!-- Footer: with CSS section-->
     <footer>
       <h4>&copy; 2018 Brianna Buissereth</h4>
     </footer>
-
+    <script src="master.js"></script>
   </main>
 </html>
