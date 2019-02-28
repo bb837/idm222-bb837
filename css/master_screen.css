@@ -26,7 +26,7 @@ html {
 
 /*              HEADER               */
 
-header {
+/* header {
     background-color: #355C7D;
     box-shadow: 0 .3125rem .625rem #717171;
     color: #ffffff;
@@ -37,7 +37,7 @@ header {
     z-index: 30;
     height: 70px;
   }
-  
+   */
   #logo {
     position: absolute;
     top: .5rem;
@@ -129,13 +129,13 @@ a#icon {
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
+/* @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
-  }
+  } */
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
  
@@ -185,10 +185,13 @@ a#icon {
   }
   
   p.paragraph_text {
+    background-color: white;
+    border-radius: 1rem;
     color: #1e0e40;
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 1.5rem;
-    margin: .75rem 1.25rem;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
   }
   
   p {
@@ -226,30 +229,133 @@ a#icon {
 /*     main     */
 
 main {
-    background: #f4efde; /* Old browsers */
-    background: -moz-linear-gradient(top, #f4efde 0%, #f7d3c5 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #f4efde 0%,#f7d3c5 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #f4efde 0%,#f7d3c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4efde', endColorstr='#f7d3c5',GradientType=0 ); /* IE6-9 */
-    color: black;
-    font-family: 'bebas-neue-by-fontfabric', sans-serif;
-    font-weight: 400;
-    font-size: 1.125rem;
-    font-style: normal;
+    background-image: linear-gradient(to bottom, #ffffff, #f6ecfb, #f7d7ee, #fcc1d6, #ffacb5);
   }
+  
 
   #portrait {
+    border-color: 1px solid black;
+    border-radius: 16rem;
     display: block;
     position: relative;
     margin: .5rem auto;
     width: 220px;
   }
   
+  /*         FOOTER           */
+
+footer {
+    background-color: #355C7D;
+    clear: both;
+    color: #ffffff;
+    margin: auto;
+    position: relative;
+    text-indent: inherit;
+  }
   
+/*              INDEX SPECS              */
+
+#portrait {
+    display: block;
+    position: relative;
+    margin: .5rem auto;
+    width: 220px;
+  }
   
+  .about_caption {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  /*         RESUME SPECS          */
+
+.resume_info h3 {
+    color: #F67280;
+    font: 1.5rem 'bebas-neue-by-fontfabric', sans-serif;
+    font-weight: bold;
+    margin: .5rem 2rem;
+  }
+  
+  .resume_info h2 {
+    margin-top: 1.5rem;
+  }
+  
+  .email {
+    line-height: 2rem;
+    margin: .5rem 3rem;
+    color: #1e0e40;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .job_1,
+  .job_2 {
+    margin-bottom: 3rem;
+  }
+  
+  #vital_medical_care,
+  #virgin_mimosa {
+    border-radius: .5rem;
+    box-shadow: 0 .3125rem .625rem #717171;
+    display: block;
+    position: relative;
+    margin: 1.5rem auto .5rem;
+  }
+  
+  .resume_centered {
+    text-align: center;
+  }
+
+/*         GALLERY/IMAGES SPECS         */
+
+/*figure.figure {
+  background-color: #F8B195;
+  float: left;
+  height: 12rem;
+  margin: 3rem .5rem;
+  padding-left: 2rem;
+  width: 20rem;
+}*/
+
+figure {
+  margin: 0;
+}
+.art {
+  border-radius: .5rem;
+  box-shadow: 0 .3125rem .625rem #717171;
+  display: block;
+  position: relative;
+  margin: 1.5rem auto .5rem;
+}
 
 
+.figcaption {
+  margin-bottom: 3rem;
+  text-align: left;
+}
 
+.figcaption
+h3,
+h4,
+p {
+  margin: auto 2rem;
+}
 
-/* @media only screen and (max-width: 375px) {
-} */
+#placeholder_img,
+#placeholder_img_02 {
+  display: block;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  width: auto;
+}
+
+.gallery_centered {
+  text-align: center;
+}
+
+video {
+  border-radius: .5rem;
+  box-shadow: 0 .3125rem .625rem #717171;
+  display: block;
+  position: relative;
+  margin: 1.5rem auto .5rem;
+}

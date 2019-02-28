@@ -278,7 +278,7 @@
 
 /* Tablet Media Query */
 
-/* @media only screen and (max-width: 800px) {
+ @media only screen and (max-width: 800px) {
   #fade-out {
     height: 100vh;
     width: 100vw;
@@ -570,3 +570,4 @@
          opacity: 1;
         }
       }
+    }
