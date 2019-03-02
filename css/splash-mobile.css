@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) and (max-width : 480px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
     #splash-closebtn {
         color: white;
         font: bold 5rem 'bebas-neue-by-fontfabric', sans-serif;
@@ -10,9 +10,6 @@
       
       #fade-out {
         background-color: #F67280;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
         height: 100vh;
         width: 100vw;
         position: absolute;
@@ -46,6 +43,13 @@
           display: none;
           visibility: hidden;
         }
+      }
+      
+      .splash_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
       }
       
       #anim_logo {
