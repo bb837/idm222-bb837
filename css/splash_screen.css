@@ -1,7 +1,7 @@
 /*      Splash Screen          */
 
 /*     MOBILE             */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   #splash-closebtn {
       color: white;
       font: bold 5rem 'bebas-neue-by-fontfabric', sans-serif;
@@ -49,21 +49,27 @@
     }
     
     .splash_content {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-rows: 20vh 200px auto 1fr;
+      grid-template-columns: 1fr 300px 1fr;
+      grid-template-areas: '. . .'
+      '. logo .' '. texts .' '. . .';
       justify-content: center;
       align-items: center;
-      width: 100%;
+      width: 100vw;
+      height: 100vh;
     }
     
     #anim_logo {
         /* position: relative;
         top: 8rem;
         left: 5.5rem; */
+        justify-self: center;
       height: 200px;
       width: 200px;
       -webkit-animation: jello-horizontal 0.9s forwards;
       animation: jello-horizontal 0.9s forwards;
+      grid-area: logo;
     }
 
     .jello-horizontal {
@@ -138,12 +144,13 @@
       text-align: center;
       top: 18rem;
       /* left: 4.3rem; */
-      position: absolute;
+      /* position: absolute; */
       opacity: 0;
       left: 11.5%;
 
       display: block;
       width: 14rem;
+      grid-area: texts;
   
       animation: flip-text 1.5s backwards;
     }
@@ -223,11 +230,11 @@
       margin: 1rem 1rem;
       text-align: center;
       top: 18rem;
+      grid-area: texts;
       /* left: 51rem; */
       position: absolute;
       opacity: 0;
-  
-      left: 11.5%;
+      justify-self: center;
 
       display: block;
       width: 14rem;
@@ -257,7 +264,6 @@
       }
     }
   
-  
     @keyframes flip-text-stay {
       0% {
         -webkit-transform: translateY(0) translateZ(0) rotateX(-180deg);
@@ -284,17 +290,16 @@
 
 /* Tablet Media Query */
 
- @media only screen and (max-width: 800px) {
+ @media only screen and (min-width: 768px) and (max-width: 1023px) {
   #fade-out {
     height: 100vh;
     width: 100vw;
   }
   .splash_content {
-    width: 20rem;
-    margin: .1rem 1.125rem;
-    padding: .5rem .25rem;
-    width: 10rem;
-    align-content: center;
+    grid-template-rows: 20vh 400px auto 1fr;
+  }
+  #text-4 {
+    top: 34rem;
   }
 }
 
@@ -483,12 +488,13 @@
         font: bold 5rem 'bebas-neue-by-fontfabric', sans-serif;
         /* margin: 1rem 1rem; */
         /* text-align: center; */
-        top: -90px;
+        top: -100%;
         /* left: 52rem; */
         /* position: absolute; */
         position: relative;
         opacity: 0;
         grid-area: text;
+
     
         animation: flip-text .75s backwards;
       }
