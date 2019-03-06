@@ -241,7 +241,8 @@ footer {
     clear: both;
     color: #ffffff;
     margin: auto;
-    position: relative;
+    bottom: 0;
+    position: fixed;
     text-indent: inherit;
     width: 100%;
   }
@@ -431,3 +432,18 @@ video {
         margin: 1.5rem auto .5rem;
       }
     }
+
+
+    Things Needed To Be Done 
+    -make new nav
+    -put it fo' tablet and desktop
+    (phil) fix the nav because it dont work anywhere else, fo some reason
+    
+    then
+    -index margin on  main
+    
+    -fix resume, last job thing has margin-bottom and thats a no
+    
+    -gallery make 3 column for desktop
+    responsive img???? pls no but i can but i dont want to
+
