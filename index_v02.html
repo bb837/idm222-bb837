@@ -16,7 +16,8 @@
 
 <body>
   <div id="fade-out">
-    <a href="javascript:void(0)" id="splash-closebtn">&times;</a>
+    <button id="splash-closebtn">&times;</button>
+    <!-- <a href="javascript:void(0)" id="splash-closebtn">&times;</a> -->
     <div class="splash_content">
       <img id="anim_logo" class="jello, roll"
       src="img/B_logo_invert.svg" alt="b.">
@@ -30,8 +31,10 @@
   <!-- Header: Logo and Menu Icon (with CSS section>)-->
   <header>
     <a href="index_v02.html"><img id="logo" src="img/Buissereth_logo_v02.svg" alt="b."></a>
-    
-    <!-- href="#nav" -->
+
+    <a class="link" href="index_v02.html">About</a>
+    <a class="link" href="Resume.html">Resume</a>
+    <a class="link" href="gallery.html">Gallery</a>
   
     <a id="icon">
       <span class="bar"></span>
@@ -41,7 +44,7 @@
     <!-- <span onclick="openNav()">&#9776;</span> -->
 
     <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
+      <button id="closebtn" class="closebtn">&times;</button>
       <div class="overlay-content">
         <a href="index_v02.html">About</a>
         <a href="Resume.html">Resume</a>
@@ -89,7 +92,7 @@
         <h4>&copy; 2018 Brianna Buissereth</h4>
     </footer>
     </main>
-    <script> src="js/splash.js"</script>
+    <script src="js/splash.js"></script>
     <script src="js/master.js"></script>
 
   </body>

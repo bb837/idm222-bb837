@@ -26,124 +26,129 @@ html {
 
 /*              HEADER               */
 
-header {
-    /* background-color: #355C7D;
-    box-shadow: 0 .3125rem .625rem #717171; */
-    /* color: #ffffff; */
-    /* position: sticky;
-    text-align: left;
-    top: 0;
-    width: 100%;
-    z-index: 30;
-    height: 70px; */
-    padding-top: .5rem;
-    margin-bottom: 2.75rem;
-  }
-  
-  #logo {
-    margin: .1rem .5rem;
-    padding: .25rem .25rem;
-    position: relative;
-    height: 100px;
-    width: 100px;
-    left: .75rem;
-  }
+@media screen and (min-width: 320px) {
 
-  span.bar {
-    background-color: #355C7D;
-    border-radius: .125rem;
-    clear: both;
-    display: block;
-    height: .25rem;
-    margin-bottom: .4rem;
-    width: 3rem;
-  }
+  header {
+      /* background-color: #355C7D;
+      box-shadow: 0 .3125rem .625rem #717171; */
+      /* color: #ffffff; */
+      /* position: sticky;
+      text-align: left;
+      top: 0;
+      width: 100%;
+      z-index: 30;
+      height: 70px; */
+      padding-top: .5rem;
+      margin-bottom: 2.75rem;
+    }
+    
+    #logo {
+      margin: .1rem .5rem;
+      padding: .25rem .25rem;
+      position: relative;
+      height: 100px;
+      width: 100px;
+      left: .75rem;
+    }
   
-  a#icon {
+    span.bar {
+      background-color: #355C7D;
       border-radius: .125rem;
+      clear: both;
       display: block;
-      position: absolute;
-      top: 2.75rem;
-      right: 1.5rem;
+      height: .25rem;
+      margin-bottom: .4rem;
+      width: 3rem;
+    }
+    
+    a#icon {
+        border-radius: .125rem;
+        display: block;
+        position: absolute;
+        top: 2.75rem;
+        right: 1.5rem;
+        visibility: visible;
+    }
+  
+  /*          NAVIGATION         */
+  
+  /* PUT HOVERS AND VISITED AND LINK */
+  
+  
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 40; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
-
-/*          NAVIGATION         */
-
-/* PUT HOVERS AND VISITED AND LINK */
-
-
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */    
-  height: 0;
-  width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 40; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #F67280;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #355C7D;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-/* @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #F67280;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #355C7D;
+  }
+  
+  /* Position the close button (top right corner) */
   .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  } */
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
- 
-  /* @media screen and (max-width: 380px) {
+  /* @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
       font-size: 40px;
       top: 15px;
       right: 35px;
-    }
-  } */
-
-  #myNav {
-    color: #C06C84;
-    font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
-    margin: 1rem auto;
-    text-align: center;
+    } */
+    
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+   
+    /* @media screen and (max-width: 380px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    } */
+  
+    #myNav {
+      color: #C06C84;
+      font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
+      margin: 1rem auto;
+      text-align: center;
+  }
 }
+
 
  /*    TEXT    */
  h1 {
@@ -217,6 +222,37 @@ header {
     margin-left: -1rem;
   }
   
+/*    HEADER NAVIGATION     */
+
+@media only screen and (min-width: 768px) {
+  
+  #icon {
+    visibility: hidden;
+  }
+
+  #myNav {
+    visibility: hidden;
+  }
+
+  .link {
+    color: #355C7D;
+    font: 2rem 'bebas-neue-by-fontfabric', sans-serif;
+    font-weight: 600;
+    margin: .5rem 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+  }
+
+
+  .link:hover {
+    color: #6C5B7B
+    
+  }
+
+}
+
+
+
 /*     main     */
 
 main {
@@ -434,16 +470,16 @@ video {
     }
 
 
-    Things Needed To Be Done 
-    -make new nav
-    -put it fo' tablet and desktop
-    (phil) fix the nav because it dont work anywhere else, fo some reason
-    
-    then
-    -index margin on  main
-    
-    -fix resume, last job thing has margin-bottom and thats a no
-    
-    -gallery make 3 column for desktop
-    responsive img???? pls no but i can but i dont want to
+    /* Things Needed To Be Done  */
+  /* -make new nav
+  -put it fo' tablet and desktop
+  (phil) fix the nav because it dont work anywhere else, fo some reason
+  
+  then
+  -index margin on  main
+  
+  -fix resume, last job thing has margin-bottom and thats a no
+  
+  -gallery make 3 column for desktop
+  responsive img???? pls no but i can but i dont want to */
 
