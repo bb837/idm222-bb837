@@ -224,6 +224,12 @@ html {
   
 /*    HEADER NAVIGATION     */
 
+@media only screen and (max-width: 768px) {
+ .link {
+   visibility: hidden;
+ } 
+}
+
 @media only screen and (min-width: 768px) {
   
   #icon {
