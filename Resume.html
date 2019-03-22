@@ -28,33 +28,38 @@
     <meta name="theme-color" content="#ffffff">
   </head>
 
-  <header>
-<!-- Header: Logo and Menu Icon (with CSS section>)-->
-<a href="index_v02.html"><img id="logo" src="img/Buissereth_logo_v02.svg" alt="b."></a>
+<body>
+    <header>
+        <a href="index_v02.html"><img id="logo" src="img/Buissereth_logo_v02.svg" alt="b."></a>
+        <div id="nav-bar">        
+          <a class="link" href="index_v02.html">About</a>
+          <a class="link" href="Resume.html">Resume</a>
+          <a class="link" href="gallery.html">Gallery</a>
+        </div>
 
-<!-- href="#nav" -->
-
-<a id="icon">
-  <span class="bar"></span>
-  <span class="bar"></span>
-  <span class="bar"></span>
-</a>
-<!-- <span onclick="openNav()">&#9776;</span> -->
-
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
-  <div class="overlay-content">
-    <a href="index_v02.html">About</a>
-    <a href="resume.html">Resume</a>
-    <a href="gallery.html">Gallery</a>
-  </div>
-</div>
-
-</header>
+      
+        <a id="icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <!-- <span onclick="openNav()">&#9776;</span> -->
+    
+        <div id="myNav" class="overlay">
+          <button id="closebtn" class="closebtn">&times;</button>
+          <div class="overlay-content">
+            <a href="index_v02.html">About</a>
+            <a href="Resume.html">Resume</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </div>
+        <!-- <span id= "icon" style="font-size:30px;cursor:pointer">&#9776; open</span> -->
+      
+    </header>
   <main>
-    <body>
-      <!-- Body Text-->
-      <h1>Resume</h1>
+    <!-- Body Text-->
+    <h1>Resume</h1>
+    <a id="print" href="javascript:window.print()"><img src="img/printer-icon.svg" alt="print"></a>
         <div class="resume_info">
 
           <h2> Contact Me</h2>
@@ -116,13 +121,10 @@
           <img id="virgin_mimosa" src="img/virgin_mimosa.jpg" alt="virgin_mimosa">
           <p class="resume_centered">Collaborative game studio comprised of undergraduate students of Drexel University</p>
         </div>
-        <footer>
-            <h4>&copy; 2019 Brianna Buissereth</h4>
-        </footer>
-      
-    </body>
-
-      <!-- Footer: with CSS section-->
-      <script src="js/master.js"></script>
-  </main>
+      </main>
+          <footer>
+              <h4>&copy; 2019 Brianna Buissereth</h4>
+          </footer>
+</body>
+  <script src="js/master.js"></script>
 </html>

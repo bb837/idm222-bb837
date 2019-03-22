@@ -26,8 +26,6 @@ html {
 
 /*              HEADER               */
 
-@media screen and (min-width: 320px) {
-
   header {
       /* background-color: #355C7D;
       box-shadow: 0 .3125rem .625rem #717171; */
@@ -69,6 +67,14 @@ html {
         right: 1.5rem;
         visibility: visible;
     }
+
+    #myNav {
+     visibility: none;
+    }
+
+    .link {
+      visibility: hidden;
+    } 
   
   /*          NAVIGATION         */
   
@@ -132,22 +138,49 @@ html {
     
     /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
    
-    /* @media screen and (max-width: 380px) {
+    @media screen and (min-width: 599px) {
       .overlay a {font-size: 20px}
       .overlay .closebtn {
         font-size: 40px;
         top: 15px;
         right: 35px;
       }
-    } */
-  
-    #myNav {
-      color: #C06C84;
-      font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
-      margin: 1rem auto;
-      text-align: center;
-  }
-}
+      #myNav {
+        color: #C06C84;
+        font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
+        margin: 1rem auto;
+        text-align: center;
+        display: none;
+
+     }
+     header {
+       display: flex;
+       flex-direction: row;
+     }
+
+     span.bar, a#icon {
+       display: none;
+     }
+
+     .overlay {
+       display: none;
+     }
+
+     #nav-bar {
+       justify-self: end;
+     }
+
+     .link {
+      color: #355C7D;
+      font: 2rem 'bebas-neue-by-fontfabric', sans-serif;
+      font-weight: 600;
+      margin: .5rem 1.2rem;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      visibility: visible;
+      justify-content: end;
+    }
+    }
 
 
  /*    TEXT    */
@@ -222,48 +255,15 @@ html {
     margin-left: -1rem;
   }
   
-/*    HEADER NAVIGATION     */
-
-@media only screen and (max-width: 768px) {
- .link {
-   visibility: hidden;
- } 
-}
-
-@media only screen and (min-width: 768px) {
-  
-  #icon {
-    visibility: hidden;
-  }
-
-  #myNav {
-    visibility: hidden;
-  }
-
-  .link {
-    color: #355C7D;
-    font: 2rem 'bebas-neue-by-fontfabric', sans-serif;
-    font-weight: 600;
-    margin: .5rem 1.2rem;
-    padding: 1rem 2rem;
-    text-decoration: none;
-  }
-
-
-  .link:hover {
-    color: #6C5B7B
-    
-  }
-
-}
-
-
 
 /*     main     */
 
 main {
     background-image: linear-gradient(to bottom, #ffffff, #f6ecfb, #f7d7ee, #fcc1d6, #ffacb5);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
 
@@ -302,21 +302,38 @@ footer {
     margin-bottom: 3rem;
     text-align: center;
   }
-  /* @media only screen and (max-width: 720px) {
 
-    main {
-      padding-left: 2rem;
+  @media only screen and (min-width: 599px) {
+
+    .paragraph_text {
+        max-width: 60rem;
     }
-  } */
-
-  /* @media only screen and (min-width: 1024px) {
-
-    main {
-      padding-left: 3rem;
-    }
-  } */
+  }
 
   /*         RESUME SPECS          */
+
+  @media print {
+    body > *:not(main) {
+      display: none;
+    }
+
+  h1, h2, h3, h4, h5, p {
+    color: black;
+  }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    #print {
+      display: none;
+    }
+  }
+
+#print {
+  height: 50px;
+  width: 50px;
+  align-self: flex-end;
+  margin-right: 2rem;
+}
 
 .resume_info h3 {
     color: #F67280;
@@ -353,20 +370,6 @@ footer {
   .resume_centered {
     text-align: center;
   }
-
-  /* @media only screen and (min-width: 720px) {
-
-    #resume_info {
-      padding-left: 2rem;
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-
-    #resume_info {
-      padding-left: 3rem;
-    }
-  } */
 
 /*                      GALLERY/IMAGES SPECS                   */
 
@@ -418,6 +421,66 @@ video {
   display: block;
   position: relative;
   margin: 1.5rem auto .5rem;
+  margin: 1.5rem auto .5rem;
+}
+
+#photocard {
+  width: 300px;
+  height: 200px;
+}
+
+#studentcard, #designcard, #lastcard {
+  width: 300px;
+  height: 150px;
+}
+
+
+#designcard, #photocard, #studentcard, #lastcard {
+  animation: flip-in-hor-top 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  background-color: #355C7D;
+  color: white;
+  margin-bottom: 3rem;
+  border-radius: .5rem;
+  box-shadow: 0 .3125rem .625rem #717171;
+}
+
+@media only screen and (max-width: 600px) {
+  #designcard, #photocard, #studentcard {
+    display: none;
+  }
+}
+
+.flip-in-hor-top {
+	-webkit-animation: flip-in-hor-top 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-hor-top 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes flip-in-hor-top {
+  0% {
+    -webkit-transform: rotateX(-80deg);
+            transform: rotateX(-80deg);
+    opacity: 0;
+    background-color: transparent;
+    
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+    background-color: #355C7D;
+  }
+}
+@keyframes flip-in-hor-top {
+  0% {
+    -webkit-transform: rotateX(-80deg);
+            transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
 }
 
 /*   DESKTOP     */
@@ -436,35 +499,37 @@ video {
       padding: 0;
   }
 
-    figure {
-      margin-top: 1rem;
-      vertical-align: middle;
-    }
 
     .art {
       margin: 0;
+    }
+
+    .masonry { 
+      max-height: 2940px;
+    }
+    
+    .masonry-brick {
+      margin: 0 8px 8px 0; /* Some gutter */
+      width: 300px;
     }
   }
 
 /*    TABLET    */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-  .gallery_page {
+  .masonry { 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    max-height: 4200px;
+    /* margin-left: -8px; Adjustment for the gutter */
+    width: 100%;
+    counter-reset: brick;
   }
-
-  .2column {
-      flex: 50%;
-      max-width: 50%;
-      padding: 0 .2rem;
+  
+  .masonry-brick {
+    margin: 0 8px 8px 0; /* Some gutter */
+    width: 300px;
   }
-
-    figure {
-      margin-top: 1rem;
-      vertical-align: middle;
-    }
 
     .art {
       margin: 0;
@@ -472,21 +537,31 @@ video {
   }
 
 
-  /*      MOBILE       */
-    
- @media screen and (min-width: 375px) and (max-width: 767px) {
-
+/*      MOBILE       */
+  
       .gallery_page {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
       }
-      .column {
+      /* .column {
         flex: 100%;
         max-width: 100%;
         justify-content: center;
-      }
+      } */
     
+
+      .masonry { 
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        counter-reset: brick;
+      }
+      
+      .masonry-brick {
+        width: 300px;
+      }
+
       figure {
         margin-top: 1rem;
         vertical-align: middle;
@@ -499,19 +574,5 @@ video {
         position: relative;
         margin: 1.5rem auto .5rem;
       }
-    }
 
-
-    /* Things Needed To Be Done  */
-  /* -make new nav
-  -put it fo' tablet and desktop
-  (phil) fix the nav because it dont work anywhere else, fo some reason
-  
-  then
-  -index margin on  main
-  
-  -fix resume, last job thing has margin-bottom and thats a no
-  
-  -gallery make 3 column for desktop
-  responsive img???? pls no but i can but i dont want to */
-
+      #
