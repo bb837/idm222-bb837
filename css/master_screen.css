@@ -267,7 +267,6 @@ footer {
 /*              INDEX SPECIFICS             */
 
   #portrait {
-    border: .0625rem solid black;
     border-radius: 16rem;
     display: block;
     position: relative;
