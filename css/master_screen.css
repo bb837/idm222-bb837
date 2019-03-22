@@ -6,9 +6,10 @@ html {
     overflow-x: hidden;
     }
   
-  /* a:visited, a:link {
-    color: #F8B195;
-  } */
+  a:visited, a:link {
+    color: #355C7D;
+    text-decoration: none;
+  }
 
   * {
     box-sizing: border-box;
@@ -24,166 +25,7 @@ html {
 
 
 
-/*              HEADER               */
-
-  header {
-      /* background-color: #355C7D;
-      box-shadow: 0 .3125rem .625rem #717171; */
-      /* color: #ffffff; */
-      /* position: sticky;
-      text-align: left;
-      top: 0;
-      width: 100%;
-      z-index: 30;
-      height: 70px; */
-      padding-top: .5rem;
-      margin-bottom: 2.75rem;
-    }
-    
-    #logo {
-      margin: .1rem .5rem;
-      padding: .25rem .25rem;
-      position: relative;
-      height: 100px;
-      width: 100px;
-      left: .75rem;
-    }
-  
-    span.bar {
-      background-color: #355C7D;
-      border-radius: .125rem;
-      clear: both;
-      display: block;
-      height: .25rem;
-      margin-bottom: .4rem;
-      width: 3rem;
-    }
-    
-    a#icon {
-        border-radius: .125rem;
-        display: block;
-        position: absolute;
-        top: 2.75rem;
-        right: 1.5rem;
-        visibility: visible;
-    }
-
-    #myNav {
-     visibility: none;
-    }
-
-    .link {
-      visibility: hidden;
-    } 
-  
-  /*          NAVIGATION         */
-  
-  /* PUT HOVERS AND VISITED AND LINK */
-  
-  
-  .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
-    height: 0;
-    width: 100%;
-    position: fixed; /* Stay in place */
-    z-index: 40; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #F67280;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #355C7D;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  /* @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    } */
-    
-    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-   
-    @media screen and (min-width: 599px) {
-      .overlay a {font-size: 20px}
-      .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-      }
-      #myNav {
-        color: #C06C84;
-        font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
-        margin: 1rem auto;
-        text-align: center;
-        display: none;
-
-     }
-     header {
-       display: flex;
-       flex-direction: row;
-     }
-
-     span.bar, a#icon {
-       display: none;
-     }
-
-     .overlay {
-       display: none;
-     }
-
-     #nav-bar {
-       justify-self: end;
-     }
-
-     .link {
-      color: #355C7D;
-      font: 2rem 'bebas-neue-by-fontfabric', sans-serif;
-      font-weight: 600;
-      margin: .5rem 1.2rem;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      visibility: visible;
-      justify-content: end;
-    }
-    }
-
-
- /*    TEXT    */
+ /*            TEXT             */
  h1 {
    color: #F67280;
    font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
@@ -230,10 +72,6 @@ html {
     margin: .5rem 2rem;
   }
   
-  /*.paragraph_text {
-    text-indent: 3rem;
-  }*/
-  
   .centered {
     text-align: center;
   }
@@ -255,8 +93,154 @@ html {
     margin-left: -1rem;
   }
   
+/*              HEADER/NAVIGATION               */
+  header {
+      padding-top: .5rem;
+      margin-bottom: 2.75rem;
+    }
+    
+    #logo {
+      margin: .1rem .5rem;
+      padding: .25rem .25rem;
+      position: relative;
+      height: 6.25rem;
+      width: 6.25rem;
+      left: .75rem;
 
-/*     main     */
+    }
+
+  @media screen and (min-width: 64rem) {
+    #logo {
+      width: 9.375rem;
+      height: 9.375rem;
+      left: 7rem;
+    }
+  }
+  
+    span.bar {
+      background-color: #355C7D;
+      border-radius: .125rem;
+      clear: both;
+      display: block;
+      height: .25rem;
+      margin-bottom: .4rem;
+      width: 3rem;
+    }
+    
+    a#icon {
+        border-radius: .125rem;
+        display: block;
+        position: absolute;
+        top: 2.75rem;
+        right: 1.5rem;
+        visibility: visible;
+    }
+
+    #myNav {
+     visibility: none;
+    }
+
+    .link {
+      visibility: hidden;
+    } 
+  
+  /*          NAVIGATION         */
+  .overlay {
+    height: 0;
+    width: 100%;
+    position: fixed; 
+    z-index: 40;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.875rem;
+  }
+  
+  .overlay a {
+    padding: .5rem;
+    text-decoration: none;
+    font-size: 2.25rem;
+    color: #F67280;
+    display: block;
+    transition: 0.3s;
+    font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #355C7D;
+  }
+  
+  .overlay .closebtn {
+    font: bold 7rem 'bebas-neue-by-fontfabric', sans-serif;
+    color: #F67280;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1.25rem;
+    right: 2.8125rem;
+  }
+  
+  @media screen and (min-width: 63.9375rem) {
+      .overlay a {font-size: 1.25rem}
+      .overlay .closebtn {
+        font-size: 2.5rem;
+        top: 0.9375rem;
+        right: 2.1875rem;
+      }
+      #myNav {
+        color: #C06C84;
+        font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
+        margin: 1rem auto;
+        text-align: center;
+        display: none;
+
+     }
+     header {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+     }
+
+     span.bar, a#icon {
+       display: none;
+     }
+
+     .overlay {
+       display: none;
+     }
+
+     #nav-bar {
+       justify-self: end;
+     }
+
+     .link {
+      color: #355C7D;
+      font: 2rem 'bebas-neue-by-fontfabric', sans-serif;
+      font-weight: 600;
+      margin: .5rem 5rem;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      visibility: visible;
+      align-self: flex-end;
+      justify-content: space-between;
+    }
+
+    .link a {
+      margin-right: 3.5rem;
+    }
+  }
+
+/*               MAIN              */
 
 main {
     background-image: linear-gradient(to bottom, #ffffff, #f6ecfb, #f7d7ee, #fcc1d6, #ffacb5);
@@ -267,14 +251,6 @@ main {
   }
   
 
-  #portrait {
-    border-color: 1px solid black;
-    border-radius: 16rem;
-    display: block;
-    position: relative;
-    margin: .5rem auto;
-    width: 220px;
-  }
   
   /*         FOOTER           */
 
@@ -291,11 +267,13 @@ footer {
   
 /*              INDEX SPECS              */
 
-#portrait {
+  #portrait {
+    border-color: .0625rem solid black;
+    border-radius: 16rem;
     display: block;
     position: relative;
     margin: .5rem auto;
-    width: 220px;
+    width: 13.75rem;
   }
   
   .about_caption {
@@ -303,7 +281,7 @@ footer {
     text-align: center;
   }
 
-  @media only screen and (min-width: 599px) {
+  @media only screen and (min-width: 37.4375rem) {
 
     .paragraph_text {
         max-width: 60rem;
@@ -312,27 +290,108 @@ footer {
 
   /*         RESUME SPECS          */
 
+  @media only screen and (min-width: 48rem) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #container {
+      align-content: center;
+      align-self: center;
+      display: grid;
+      grid-template-columns: 21.875rem auto;
+      grid-template-areas: 'name bio' 
+      'edu cation' 
+      'skills programs' 
+      'work experiences' 
+      'example_title examples';
+      grid-column-gap: 5rem;
+      grid-row-gap: 3rem;
+    }
+
+    #name, #edu, #skills, #workexp, #example_title {
+      font-size: 3rem;
+      align-self: center;
+    }
+
+    #gen-info, #education, #skills_prof, #work_info, #links {
+      border-left: .75rem solid #F67280;
+    }
+
+    #name {
+      grid-area: name;
+    }
+
+    #gen-info {
+      grid-area: bio;
+    }
+
+    #edu {
+      grid-area: edu;
+    }
+
+    #education {
+      grid-area: cation;
+    }
+
+    #skills {
+      grid-area: skills;
+    }
+
+    #skills_prof {
+      grid-area: programs;
+    }
+
+    #workexp {
+      grid-area: work;
+    }
+
+    #work_info {
+      grid-area: experiences;
+    }
+
+    #example_title {
+      grid-area: example_title;
+    }
+
+    #links {
+      grid-area: examples;
+    }
+
+    #soft_skills {
+      border-top: dashed #C06C84;
+      margin: 0 1rem 0;
+    }
+
+  #soft_skills h3,   #soft_skills p {
+    display: inline-block;
+    }
+  }
+
   @media print {
-    body > *:not(main) {
+    body > *:not(main), #print {
       display: none;
     }
 
-  h1, h2, h3, h4, h5, p {
+  h1, h2, h3, h4, h5, p, li, a {
     color: black;
-  }
+    }
   }
 
-  @media only screen and (max-width: 1024px) {
+  /*         PRINT        */
+  @media only screen and (max-width: 63.9375rem) {
     #print {
       display: none;
     }
   }
 
 #print {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   align-self: flex-end;
-  margin-right: 2rem;
+  right: 4rem;
+  position: absolute;
 }
 
 .resume_info h3 {
@@ -371,17 +430,7 @@ footer {
     text-align: center;
   }
 
-/*                      GALLERY/IMAGES SPECS                   */
-
-/*figure.figure {
-  background-color: #F8B195;
-  float: left;
-  height: 12rem;
-  margin: 3rem .5rem;
-  padding-left: 2rem;
-  width: 20rem;
-}*/
-
+/*            GALLERY/IMAGES SPECS               */
 .art {
   border-radius: .5rem;
   box-shadow: 0 .3125rem .625rem #717171;
@@ -390,21 +439,16 @@ footer {
   margin: 1.5rem auto .5rem;
 }
 
-
 .figcaption {
   margin-bottom: 3rem;
   text-align: left;
 }
 
-.figcaption
-h3,
-h4,
-p {
+.figcaption h3, h4, p {
   margin: auto 2rem;
 }
 
-#placeholder_img,
-#placeholder_img_02 {
+#placeholder_img, #placeholder_img_02 {
   display: block;
   margin: 1.5rem auto;
   padding: 1rem;
@@ -425,15 +469,14 @@ video {
 }
 
 #photocard {
-  width: 300px;
-  height: 200px;
+  width: 18.75rem;
+  height: 12.5rem;
 }
 
 #studentcard, #designcard, #lastcard {
-  width: 300px;
-  height: 150px;
+  width: 18.75rem;
+  height: 9.375rem;
 }
-
 
 #designcard, #photocard, #studentcard, #lastcard {
   animation: flip-in-hor-top 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -444,7 +487,7 @@ video {
   box-shadow: 0 .3125rem .625rem #717171;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5rem) {
   #designcard, #photocard, #studentcard {
     display: none;
   }
@@ -461,8 +504,8 @@ video {
             transform: rotateX(-80deg);
     opacity: 0;
     background-color: transparent;
-    
   }
+
   100% {
     -webkit-transform: rotateX(0);
             transform: rotateX(0);
@@ -470,6 +513,7 @@ video {
     background-color: #355C7D;
   }
 }
+
 @keyframes flip-in-hor-top {
   0% {
     -webkit-transform: rotateX(-80deg);
@@ -483,10 +527,8 @@ video {
   }
 }
 
-/*   DESKTOP     */
-
-@media only screen and (min-width: 1024px) {
-
+/*               DESKTOP GALLERY               */
+@media only screen and (min-width: 64rem) {
   .gallery_page {
     display: flex;
     flex-direction: row;
@@ -499,7 +541,6 @@ video {
       padding: 0;
   }
 
-
     .art {
       margin: 0;
     }
@@ -509,70 +550,59 @@ video {
     }
     
     .masonry-brick {
-      margin: 0 8px 8px 0; /* Some gutter */
-      width: 300px;
+      margin: 0 .5rem .5rem 0;
+      width: 18.75rem;
     }
   }
 
-/*    TABLET    */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-
+/*             TABLET GALLERY            */
+@media only screen and (min-width: 48rem) and (max-width: 63.9375rem) {
   .masonry { 
     display: flex;
     flex-flow: column wrap;
     max-height: 4200px;
-    /* margin-left: -8px; Adjustment for the gutter */
     width: 100%;
     counter-reset: brick;
   }
   
   .masonry-brick {
-    margin: 0 8px 8px 0; /* Some gutter */
-    width: 300px;
+    margin: 0 .5rem .5rem 0;
+    width: 18.75rem;
   }
 
-    .art {
-      margin: 0;
+  .art {
+    margin: 0;
     }
   }
 
-
-/*      MOBILE       */
+/*             MOBILE GALLERY             */
   
-      .gallery_page {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-      }
-      /* .column {
-        flex: 100%;
-        max-width: 100%;
-        justify-content: center;
-      } */
-    
+  .gallery_page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
 
-      .masonry { 
-        display: flex;
-        flex-flow: column wrap;
-        width: 100%;
-        counter-reset: brick;
-      }
+  .masonry { 
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    counter-reset: brick;
+    }
       
-      .masonry-brick {
-        width: 300px;
-      }
+  .masonry-brick {
+    width: 18.75rem;
+    }
 
-      figure {
-        margin-top: 1rem;
-        vertical-align: middle;
-      }
+  figure {
+    margin-top: 1rem;
+    vertical-align: middle;
+    }
 
-      .art {
-        border-radius: .5rem;
-        box-shadow: 0 .3125rem .625rem #717171;
-        display: block;
-        position: relative;
-        margin: 1.5rem auto .5rem;
-      }
-
-      #
+  .art {
+    border-radius: .5rem;
+    box-shadow: 0 .3125rem .625rem #717171;
+    display: block;
+    position: relative;
+    margin: 1.5rem auto .5rem;
+    }
