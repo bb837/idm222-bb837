@@ -18,15 +18,13 @@ promiseEvents.then(function() {
   closeSplash();
 })
 
-// //  LOCAL STORAGE /////
+//  LOCAL STORAGE    //
 
 const introWatched = localStorage.getItem('introWatched');
 
 if (introWatched === 'true') 
 {
   console.log(introElement);
-  // introElement.style.height = '0vh';
-  // introElement.style.width = '0vh';
   document.body.removeChild(introElement);
 
   console.log('Intro Played');

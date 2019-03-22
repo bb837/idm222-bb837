@@ -8,23 +8,39 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://use.typekit.net/cai3xkh.css">
     <link rel="stylesheet" href="css/master_screen.css">
-    <!-- <link rel="stylesheet" href="css/splash-mobile.css"> -->
     <link rel="stylesheet" href="css/splash_screen.css">
-    <!--  ADD FAVICON-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 
 <body>
+  <!-- Splash Screen animation (duration 6s) -->
   <div id="fade-out">
     <button id="splash-closebtn">&times;</button>
-    <!-- <a href="javascript:void(0)" id="splash-closebtn">&times;</a> -->
     <div class="splash_content">
       <img id="anim_logo" class="jello, roll"
       src="img/B_logo_invert.svg" alt="b.">
       <p id="text-1" class='splash-text'>Web Designer</p>
       <p id="text-2" class='splash-text'>UI Designer</p>
       <p id="text-3" class='splash-text'>UX Designer</p>
-      <p id="text-4" >Welcome!</p>
+      <p id="text-4">Welcome!</p>
     </div>
   </div>
 
@@ -32,18 +48,19 @@
   <header>
     <a href="index_v02.html"><img id="logo" src="img/Buissereth_logo_v02.svg" alt="b."></a>
     
+    <!-- Header for desktop -->
     <span class="link">
       <a href="index_v02.html">About</a>
       <a href="Resume.html">Resume</a>
       <a href="gallery.html">Gallery</a>
     </span>
-  
+
+    <!-- Header for mobile and tablet -->
     <a id="icon">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </a>
-    <!-- <span onclick="openNav()">&#9776;</span> -->
 
     <div id="myNav" class="overlay">
       <button id="closebtn" class="closebtn">&times;</button>
@@ -53,7 +70,6 @@
         <a href="gallery.html">Gallery</a>
       </div>
     </div>
-    <!-- <span id= "icon" style="font-size:30px;cursor:pointer">&#9776; open</span> -->
   
 </header>
     <main>
@@ -76,26 +92,13 @@
           <h3>Currently</h3>
           <p class="paragraph_text"> I was accepted into Westphal College of Media Arts at Drexel University in 2016 for the Interactive Digital Media major. The work and skills I have had to learn were daunting especially because I have not had any prior education with computer languages. I chose Interactive Digital Media because of the wide skill set needed for the job environment in digital media. My ideal career is not to be in one position doing one job every day. I would like to explore many roles in many fields. Digital media stretches across many fields that will allow me to keep learning and make the best product for that client. I fit into the role of project manager or creative director for projects. </p>
 
-      <!-- Navigation: with CSS section-->
-      <!--<nav id="nav">
-
-        <ul>
-          <li><a id="index_button" href="index.html">Home</a></li>
-          <li><a id="resume_button" href="resume.html">Resume</a></li>
-          <li><a id="gallery_button" href="gallery.html">Gallery</a></li>
-        </ul>
-      </nav>-->
-
-
-
-
     <!-- Footer: with CSS section-->
     <footer>
         <h4>&copy; 2019 Brianna Buissereth</h4>
     </footer>
     </main>
     <script src="js/splash.js"></script>
-    <script src="js/master.js"></script>#
+    <script src="js/master.js"></script>
 
   </body>
 </html>

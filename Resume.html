@@ -31,19 +31,20 @@
 <body>
     <header>
         <a href="index_v02.html"><img id="logo" src="img/Buissereth_logo_v02.svg" alt="b."></a>
-        <div id="nav-bar">        
-          <a class="link" href="index_v02.html">About</a>
-          <a class="link" href="Resume.html">Resume</a>
-          <a class="link" href="gallery.html">Gallery</a>
-        </div>
 
-      
+        <!-- header for desktop -->
+        <span class="link">
+            <a href="index_v02.html">About</a>
+            <a href="Resume.html">Resume</a>
+            <a href="gallery.html">Gallery</a>
+          </span>
+
+          <!-- header for mobile and tablet -->
         <a id="icon">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </a>
-        <!-- <span onclick="openNav()">&#9776;</span> -->
     
         <div id="myNav" class="overlay">
           <button id="closebtn" class="closebtn">&times;</button>
@@ -53,12 +54,13 @@
             <a href="gallery.html">Gallery</a>
           </div>
         </div>
-        <!-- <span id= "icon" style="font-size:30px;cursor:pointer">&#9776; open</span> -->
       
     </header>
   <main>
+    <!-- Printer Icon: Refer to Print CSS Section -->
     <a id="print" href="javascript:window.print()"><img src="img/printer-icon.svg" alt="print"></a>
     
+    <!--Resume Body: Refer to Resume Specs for styling-->
     <div id="container">
        <h1 id="name">Brianna Buissereth</h1>
       <div id="gen-info">
@@ -66,6 +68,7 @@
             <address class="email"> <a href="mailto:covibui@gmail.com"> covibui@gmail.com</a>
             <br><a href="mailto:bb837@drexel.edu"> bb837@drexel.edu</a>
             </address>
+      </div>
       </div>
           
       <h1 id="edu"> Education</h1>
@@ -132,11 +135,6 @@
           <footer>
               <h4>&copy; 2019 Brianna Buissereth</h4>
           </footer>
-    </div>
-    <!-- Body Text-->
-    
-    
-   
+          <script src="js/master.js"></script>
 </body>
-  <script src="js/master.js"></script>
 </html>

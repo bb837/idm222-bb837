@@ -9,6 +9,8 @@
       text-decoration: none;
       position: absolute;
       z-index: 60;
+      border: none;
+      background: none;
     }
     
     #fade-out {
@@ -61,9 +63,6 @@
     }
     
     #anim_logo {
-        /* position: relative;
-        top: 8rem;
-        left: 5.5rem; */
         justify-self: center;
       height: 12.5rem;
       width: 12.5rem;
@@ -140,11 +139,8 @@
     .splash-text {
       color: white;
       font: bold 3rem 'bebas-neue-by-fontfabric', sans-serif;
-      /* margin: 1rem 1rem; */
       text-align: center;
       top: 18rem;
-      /* left: 4.3rem; */
-      /* position: absolute; */
       opacity: 0;
       left: 11.5%;
 
@@ -180,12 +176,6 @@
                 transform-origin: 50% 100%;
           opacity: 0;
       }
-      /* 10% {
-        -webkit-transform: translateY(0) translateZ(0) rotateX(-90);
-               transform: translateY(0) translateZ(0) rotateX(-90);
-        -webkit-transform-origin: 12.5% 25%;
-               transform-origin: 12.5% 25%;
-      } */
       50% {
         
           opacity: 1;
@@ -231,13 +221,11 @@
       text-align: center;
       top: 18rem;
       grid-area: texts;
-      /* left: 51rem; */
       position: absolute;
       opacity: 0;
       justify-self: center;
-
       display: block;
-      width: 14rem;
+      width: 100%;
       animation: flip-text-stay 1.5s forwards 4s;
     }
   
@@ -316,9 +304,6 @@
     
     #fade-out {
       background-color: #F67280;
-      /* display: flex;
-      flex-direction: row;
-      align-content: center; */
       height: 100vh;
       width: 100vw;
       position: absolute;
@@ -365,8 +350,6 @@
        '. logo text .' '. . . .';
     }
 
-    
-    
     #anim_logo {
       height: 12.5rem;
       width: 12.5rem;
@@ -503,8 +486,8 @@
     }
       
       .flip-text {
-      -webkit-animation: flip-2-hor-bottom-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-              animation: flip-2-hor-bottom-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+      -webkit-animation: flip-2-hor-bottom-fwd 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+              animation: flip-2-hor-bottom-fwd 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     }
     
     @-webkit-keyframes flip-text {

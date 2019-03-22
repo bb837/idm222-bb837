@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://use.typekit.net/cai3xkh.css">
     <link rel="stylesheet" href="css/master_screen.css">
-    <!-- <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
@@ -23,25 +23,27 @@
     <link rel="manifest" href="manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff"> -->
+    <meta name="theme-color" content="#ffffff">
   </head>
 
   <body>
     <header>
       <!-- Header: Logo and Menu Icon (with CSS section>)-->
         <a href="index_v02.html"><img id="logo" src="img/Buissereth_logo_v02.svg" alt="b."></a>
-        <div id="nav-bar">        
-            <a class="link" href="index_v02.html">About</a>
-            <a class="link" href="Resume.html">Resume</a>
-            <a class="link" href="gallery.html">Gallery</a>
-          </div>
+
+        <!-- Header for desktop -->
+        <span class="link">
+            <a href="index_v02.html">About</a>
+            <a href="Resume.html">Resume</a>
+            <a href="gallery.html">Gallery</a>
+          </span>
   
+          <!-- Header for mobile and tablet -->
         <a id="icon">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
           </a>
-          <!-- <span onclick="openNav()">&#9776;</span> -->
       
           <div id="myNav" class="overlay">
             <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
@@ -51,19 +53,23 @@
               <a href="gallery.html">Gallery</a>
             </div>
           </div>
-          <!-- Body Text-->
-            <h1>Gallery</h1>
-        
+
     </header>
+         <h1>Gallery</h1>    
+         
+        <!-- Body Text: Refer to GALLERY SPECS CSS Section-->
     <main class="masonry">
 
+           <!--Refer to Gallery Specs for styling-->
           <figure id="photocard" class="masonry-brick">
            <h1 class="centered">Let's start with some photography!</h1>
           </figure>
 
           <figure  class="masonry-brick">
             <!--Refer to Gallery Specs for styling-->
-            <img class="art" src="img/DSC_0015.jpg" alt="organic_pattern">
+            <img class="art" srcset="img/DSC_0015.jpg 1x, img/DSC_0015_large.jpg 2x"
+                src="img/DSC_0015.jpg"
+                alt="organic_pattern">
             <figcaption class="figcaption">
               <h3>Organic Pattern</h3>
               <h4>Center City Trip</h4>
@@ -72,7 +78,9 @@
           </figure>
     
           <figure   class="masonry-brick">
-            <img class="art" src="img/DSC_0020.jpg" alt="under_bridge">
+            <img class="art" srcset="img/DSC_0020.jpg 1x, img/DSC_0020_large.jpg 2x"
+                src="img/DSC_0020.jpg"
+                alt="under_bridge">
             <figcaption class="figcaption">
               <h3>Decay</h3>
               <h4>Center City Trip</h4>
@@ -81,7 +89,9 @@
           </figure>
     
           <figure   class="masonry-brick">
-          <img class="art" src="img/DSC_0039.jpg" alt="organic_and_geometric">
+            <img class="art" srcset="img/DSC_0039.jpg 1x, img/DSC_0039_large.jpg 2x"
+              src="img/DSC_0039.jpg"
+              alt="organic_and_geometric">
             <figcaption class="figcaption">
               <h3>Organic Vs Geometric</h3>
               <h4>Center City Trip</h4>
@@ -93,7 +103,6 @@
               <h1> Collaborative Work!</h1>
             </figure>
   
-            <!--Refer to Gallery Specs for styling-->
             <figure class="masonry-brick">
             <video   class="masonry-brick" controls poster="img/reve_main.jpg" width="360">
               <source src="media/reve.mp4" type="video/mp4" />
@@ -108,7 +117,9 @@
             </figure>
           
           <figure   class="masonry-brick">
-            <img class="art" src="img/DSC_0047.jpg" alt="no_swimming">
+            <img class="art" srcset="img/DSC_0047.jpg 1x, img/DSC_0047_large.jpg 2x"
+              src="img/DSC_0047.jpg"
+              alt="no_swimming">
             <figcaption class="figcaption">
               <h3>Captcha</h3>
               <h4>Center City Trip</h4>
@@ -117,7 +128,9 @@
           </figure>
     
           <figure  class="masonry-brick">
-          <img class="art" src="img/DSC_0055.jpg" alt="dragon_texture">
+          <img class="art" srcset="img/DSC_0055.jpg 1x, img/DSC_0055_large.jpg 2x"
+              src="img/DSC_0055.jpg"
+              alt="dragon_texture">
             <figcaption class="figcaption">
               <h3>Dragon Texture</h3>
               <h4>Center City Trip</h4>
@@ -126,7 +139,9 @@
           </figure>
     
           <figure  class="masonry-brick">
-          <img class="art" src="img/DSC_0072.jpg" alt="rock">
+          <img class="art" srcset="img/DSC_0072.jpg 1x, img/DSC_0072_large.jpg 2x"
+              src="img/DSC_0072.jpg"
+              alt="rock">
             <figcaption class="figcaption">
               <h3>Rock</h3>
               <h4>Center City Trip</h4>
@@ -135,7 +150,9 @@
           </figure>
     
           <figure  class="masonry-brick">
-          <img class="art" src="img/DSC_0111.jpg" alt="hand">
+          <img class="art" srcset="img/DSC_0111.jpg 1x, img/DSC_0111_large.jpg 2x"
+              src="img/DSC_0111.jpg"
+              alt="hand">
             <figcaption class="figcaption">
               <h3>Crafting Hand</h3>
               <h4>Portrait</h4>
@@ -144,7 +161,9 @@
           </figure>
   
           <figure  class="masonry-brick">
-          <img class="art" src="img/DSC_0220.jpg" alt="alleyway">
+          <img class="art" srcset="img/DSC_0220.jpg 1x, img/DSC_0220_large.jpg 2x"
+              src="img/DSC_0220.jpg"
+              alt="alleyway">
             <figcaption class="figcaption">
               <h3>Alley No.1</h3>
               <h4>Another Center City Trip</h4>
@@ -153,7 +172,9 @@
           </figure>
     
           <figure  class="masonry-brick">
-          <img class="art" src="img/DSC_0232.jpg" alt="Exit">
+          <img class="art" srcset="img/DSC_0232.jpg 1x, img/DSC_0232_large.jpg 2x"
+              src="img/DSC_0232.jpg"
+              alt="Exit">
             <figcaption class="figcaption">
               <h3>Exit</h3>
               <h4> Another Center City Trip</h4>
@@ -162,7 +183,9 @@
           </figure>
     
           <figure  class="masonry-brick">
-          <img class="art" src="img/DSC_0234.jpg" alt="geometric_cardboard_pattern">
+          <img class="art" srcset="img/DSC_0234.jpg 1x, img/DSC_0234_large.jpg 2x"
+              src="img/DSC_0234.jpg"
+              alt="geometric_cardboard_pattern">
             <figcaption class="figcaption">
               <h3>Geometric</h3>
               <h4>Another Center City Trip</h4>
@@ -171,7 +194,9 @@
           </figure>
     
           <figure  class="masonry-brick">
-          <img class="art" src="img/DSC_0239.jpg" alt="glowing_park_sign">
+          <img class="art" srcset="img/DSC_0239.jpg 1x, img/DSC_0239_large.jpg 2x"
+              src="img/DSC_0239.jpg"
+              alt="glowing_park_sign">
             <figcaption class="figcaption">
               <h3>Alley No.2</h3>
               <h4>Another Center City Trip</h4>
@@ -180,7 +205,9 @@
           </figure>
     
           <figure  class="masonry-brick">
-          <img class="art" src="img/DSC_0244.jpg" alt="glowing_park_sign_2">
+          <img class="art" srcset="img/DSC_0244.jpg 1x, img/DSC_0244_large.jpg 2x"
+              src="img/DSC_0244.jpg"
+              alt="glowing_park_sign_2">
             <figcaption class="figcaption">
               <h3>Alley No.2 cont.</h3>
               <h4>Another Center City Trip</h4>
@@ -189,7 +216,9 @@
           </figure>
     
           <figure  class="masonry-brick">
-          <img class="art" src="img/DSC_0252.jpg" alt="another_park_sign">
+          <img class="art" srcset="img/DSC_0252.jpg 1x, img/DSC_0252_large.jpg 2x"
+              src="img/DSC_0252.jpg"
+              alt="another_park_sign">
             <figcaption class="figcaption">
               <h3>Alley No.2 cont.</h3>
               <h4>Another Center City Trip</h4>
@@ -226,6 +255,6 @@
         <h4>&copy; 2019 Brianna Buissereth</h4>
       </footer>
     </main>
+    <script src="js/master.js"></script>
   </body>
-  <script src="js/master.js"></script>
 </html>
